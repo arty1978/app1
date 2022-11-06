@@ -1,0 +1,16 @@
+<h2>Students List</h2>
+<input
+  [(ngModel)]="student"
+  placeholder="add New Student"
+  (keyup.enter)="addStudent()"
+/>
+<table>
+  <ol>
+    <li
+      *ngFor="let student of students; let i = index"
+      (click)="removeStudent(i)"
+    >
+      {{ i + 1 }}. {{ student }}
+    </li>
+  </ol>
+</table>

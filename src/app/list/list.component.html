@@ -1,0 +1,14 @@
+<input
+  [(ngModel)]="item"
+  placeholder="add your item here"
+  (keyup.enter)="addItem()"
+/>
+<ol>
+  <li
+    *ngFor="let i of itemsList; let x = index"
+    (click)="removeItem(x)"
+    (click)="localStore.removeData('listItem')"
+  >
+    {{ i }}
+  </li>
+</ol>

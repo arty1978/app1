@@ -1,0 +1,40 @@
+<div class="frame">
+  <h2>Contact</h2>
+  <div class="field">
+    <label>Full Name</label>
+    <input type="text" [(ngModel)]="name" />
+  </div>
+
+  <div class="field">
+    <label>Phone number</label>
+    <input type="tel" [(ngModel)]="phone" />
+  </div>
+
+  <div class="field">
+    <label>email adress</label>
+    <input type="email" [(ngModel)]="email" />
+  </div>
+
+  <div class="field">
+    <label>your content</label>
+    <textarea
+      placeholder="Enter your message here"
+      cols="30"
+      rows="10"
+      [(ngModel)]="content"
+    ></textarea>
+  </div>
+  <div class="field">
+    <label>Joy level</label>
+    <app-range></app-range>
+  </div>
+
+  <div class="field">
+    <label>Fear level</label>
+    <app-range></app-range>
+  </div>
+
+  <div class="field">
+    <button (click)="send()">send</button>
+  </div>
+</div>

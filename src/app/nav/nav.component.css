@@ -1,0 +1,15 @@
+div,
+a {
+  background-color: rgb(41, 92, 92);
+}
+a {
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+  color: antiquewhite;
+  padding: 10px;
+}
+a:hover {
+  color: rgb(163, 208, 201);
+}
